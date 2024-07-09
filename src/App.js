@@ -55,7 +55,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Tic Tac Toe</h1>
+      <h1 style={{color:'white',justifyContent:'center',margin: 'auto', display:'flex',marginBottom:'4vh',marginTop:'5vh'}}> Tic Tac Toe</h1>
       <div className='board'>
         {board.map((row, rowIndex) => (
           <div key={rowIndex} className='row'>
@@ -77,7 +77,7 @@ const App = () => {
         ) : (
           <p>Current Player: {currentPlayer}</p>
         )}
-        <button onClick={resetGame}>Reset Game</button>
+        <button onClick={resetGame}>Reset</button>
       </div>
     </div>
   );
