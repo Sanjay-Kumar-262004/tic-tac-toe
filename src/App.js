@@ -72,7 +72,7 @@ const App = () => {
           winner === 'tie' ? (
             <p>It's a tie!</p>
           ) : (
-            <p>{winner} wins!</p>
+            <p color='white'>{winner} wins!</p>
           )
         ) : (
           <p>Current Player: {currentPlayer}</p>

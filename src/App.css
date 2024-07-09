@@ -2,18 +2,21 @@
   text-align: center;
   font-family: Arial, sans-serif;
 }
-body{
+
+body {
   background-color: black;
 }
 
 .board {
   display: inline-block;
   margin: 20px;
-  background-color: white;
+  background-color: black; 
 }
+
 .row {
   display: flex;
 }
+
 .cell {
   width: 115px;
   height: 115px;
@@ -23,16 +26,45 @@ body{
   align-items: center;
   cursor: pointer;
   font-size: 24px;
+  border-radius: 50px;
+  background-color: white; 
+  margin: 5px; 
 }
-.status{
+
+.status {
   margin-top: 20px;
+  color: white;
 }
+
 button {
-  margin-top:30vh ;
+  margin-top: 30vh;
   font-size: 16px;
   padding: 8px 8px;
   cursor: pointer;
   background-color: red;
   width: 100%;
   color: white;
+}
+@media (max-width: 768px) {
+  .cell {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+  }
+
+  button {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cell {
+    width: 60px;
+    height: 60px;
+    font-size: 16px;
+  }
+
+  button {
+    width: 90%;
+  }
 }
